@@ -1,0 +1,49 @@
+.selected-panel {
+    border-top: black solid 1px;
+    display: flex;
+    padding: 25px;
+}
+
+.selected-panel .selected-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 50px;
+}
+
+.selected-panel .selected-list .selected-item {
+    width: 100px;
+}
+
+/* import './style.css';
+
+function SelectedList() {
+    return ( <div className='selected-panel'>
+        <div className='selected-label'>Your Salad</div>
+        <div className="selected-list">
+            <div className="selected-item">
+                anys
+            </div>
+            <div className="selected-item">
+                anys
+            </div>
+            <div className="selected-item">
+                anys
+            </div>
+            <div className="selected-item">
+                anys
+            </div>
+            <div className="selected-item">
+                anys
+            </div>
+            <div className="selected-item">
+                anys
+            </div>
+            <div className="selected-item">
+                anys
+            </div>
+        </div>
+    </div> );
+}
+
+export default SelectedList; */
