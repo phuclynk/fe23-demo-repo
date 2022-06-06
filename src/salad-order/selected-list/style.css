@@ -9,10 +9,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 50px;
+    margin-left: 20px;
 }
 
 .selected-panel .selected-list .selected-item {
-    width: 100px;
+    width: 200px;
+    text-align: left;
 }
 
 /* import './style.css';
