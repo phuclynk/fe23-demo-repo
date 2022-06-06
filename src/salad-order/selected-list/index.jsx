@@ -3,6 +3,7 @@ import { SaladContext } from '../salad-store/contex';
 import './style.css';
 
 function SelectedList() {
+    // Lấy các món đã được chọn để hiển thị
     const { selectedOptions } = useContext(SaladContext);
 
     return ( <div className='selected-panel'>

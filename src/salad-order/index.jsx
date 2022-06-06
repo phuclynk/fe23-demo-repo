@@ -9,8 +9,7 @@ function SaladMenu() {
                 <span className="salad-menu-label">Build Your Custom Salad!</span>
                 <span className="salad-menu-title-icon"> 🥗</span>
             </h1>
-            <SaladList 
-            />
+            <SaladList/>
             <SelectedList/>
         </div>
     ); 
