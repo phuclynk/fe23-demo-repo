@@ -27,7 +27,7 @@ function App() {
         const newSelectedOptionList = [...selectedOptions]
         // Xóa bằng hàm splice ở mảng đã được copy
         newSelectedOptionList.splice(itemIndex, 1);
-        setSelectedOptionIds([...selectedOptions]);
+        setSelectedOptionIds([...newSelectedOptionList]);
         return;
       }
 
