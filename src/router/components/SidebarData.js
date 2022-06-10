@@ -11,30 +11,30 @@ export const SidebarData = [
         icon: <AiIcons.AiFillHome />,
         cName: "nav-text"
     },
-    {
-        title: "Reports",
-        path: "/reports",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "nav-text"
-    },
+    // {
+    //     title: "About",
+    //     path: "/reports",
+    //     icon: <IoIcons.IoIosPaper />,
+    //     cName: "nav-text"
+    // },
     {
         title: "Products",
-        path: "/products",
+        path: "products",
         icon: <FaIcons.FaCartPlus />,
         cName: "nav-text"
     },
-    {
-        title: "Team",
-        path: "/team",
-        icon: <IoIcons.IoMdPeople />,
-        cName: "nav-text"
-    },
-    {
-        title: "Messages",
-        path: "/",
-        icon: <FaIcons.FaEnvelopeOpenText />,
-        cName: "nav-text"
-    },
+    // {
+    //     title: "Team",
+    //     path: "/team",
+    //     icon: <IoIcons.IoMdPeople />,
+    //     cName: "nav-text"
+    // },
+    // {
+    //     title: "Messages",
+    //     path: "/",
+    //     icon: <FaIcons.FaEnvelopeOpenText />,
+    //     cName: "nav-text"
+    // },
     {
         title: "Support",
         path: "/support",
