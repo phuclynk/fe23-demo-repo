@@ -3,6 +3,8 @@ import SaladMenu from './salad-order';
 import { useState } from 'react';
 import { v4 } from 'uuid';
 import { SaladContext } from './salad-order/salad-store/contex';
+import { Home } from './custom-hook';
+import RouterDemo from './router/RouterDemo';
 
 export const SADLAD_OPTION_LIST = [
   { id: v4(), title: 'Apple', img: '🍎' },
@@ -31,7 +33,6 @@ function App() {
         return;
       }
 
-
       setSelectedOptionIds([...selectedOptions, selectedItem]);
     }
 
@@ -41,12 +42,18 @@ function App() {
         - Các món mình đã chọn
         - Hhàm để cập nhật việc chọn món
       */}
-      <SaladContext.Provider value={{
+      {/* <SaladContext.Provider value={{
         selectedOptions,
         updateSelectedOption: handleSelect
       }}>
         <SaladMenu/>
-      </SaladContext.Provider>
+      </SaladContext.Provider> */}
+
+      {/* <Home/> */}
+
+      {/* <Login/> */}
+
+      <RouterDemo/>
     </div>
   );
 }
