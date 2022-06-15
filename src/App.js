@@ -5,6 +5,11 @@ import { v4 } from 'uuid';
 import { SaladContext } from './salad-order/salad-store/contex';
 import { Home } from './custom-hook';
 import RouterDemo from './router/RouterDemo';
+import RoutedApp from './router-demo/RoutedApp';
+import { BrowserRouter } from 'react-router-dom';
+import { TodoApp } from './redux/TodoApp/TodoApp';
+import { Provider } from 'react-redux';
+import { todoStore } from './redux/store/todoStore';
 
 export const SADLAD_OPTION_LIST = [
   { id: v4(), title: 'Apple', img: '🍎' },
@@ -38,22 +43,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* KKhởi tạo context để truyền value
-        - Các món mình đã chọn
-        - Hhàm để cập nhật việc chọn món
-      */}
-      {/* <SaladContext.Provider value={{
-        selectedOptions,
-        updateSelectedOption: handleSelect
-      }}>
-        <SaladMenu/>
-      </SaladContext.Provider> */}
-
-      {/* <Home/> */}
-
-      {/* <Login/> */}
-
-      <RouterDemo/>
+      {/* <BrowserRouter>
+        <RoutedApp/>  
+      </BrowserRouter> */}
+      <Provider store={todoStore}>
+        <TodoApp/>
+      </Provider>
     </div>
   );
 }

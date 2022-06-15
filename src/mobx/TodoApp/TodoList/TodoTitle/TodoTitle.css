@@ -1,0 +1,10 @@
+.todo-title {
+    width: 95%;
+    padding-left: 5%;
+    height: 15%;
+    border-bottom: 2px solid rgb(224, 230, 230);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
